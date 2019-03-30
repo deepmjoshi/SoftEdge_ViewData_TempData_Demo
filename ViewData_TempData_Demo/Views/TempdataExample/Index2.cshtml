@@ -1,0 +1,11 @@
+﻿@{
+    var message1 = TempData["message1"].ToString();
+    var message2 = TempData["message2"].ToString();
+    var message3 = TempData["message3"].ToString();
+    TempData.Keep();
+}
+
+@message1 <br />
+@message2 <br />
+@message3 <br />
+@Html.ActionLink("Index3", "Index3");

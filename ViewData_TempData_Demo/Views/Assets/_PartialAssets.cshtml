@@ -1,0 +1,17 @@
+﻿@using ViewData_TempData_Demo.Models
+<table>
+    <tr>
+        <th>Asset Id</th>
+        <th>Asset Name</th>
+        <th>Asset Count</th>
+    </tr>
+    @foreach(var asset in ViewData.Keys)
+    {
+        var assetSummary = (ViewModelAssets)ViewData[asset];
+    <tr>
+        <td>@assetSummary.AssetID</td>
+        <td>@assetSummary.AssetName</td>
+        <td>@assetSummary.AssetCount</td>
+    </tr>
+    }
+</table>
